@@ -1,0 +1,89 @@
+# .gitignore para projeto Unity (PushBox)
+# Fica na pasta raiz do projeto, ao lado de Assets, Packages e ProjectSettings.
+# Base: https://github.com/github/gitignore/blob/main/Unity.gitignore
+
+# ---- Pastas que o Unity recria sozinho ----
+.utmp/
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+*.log
+
+# MemoryCaptures e Recordings podem ficar enormes
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Arquivos de backup do Blender
+*.blend1
+*.blend1.meta
+
+# Plugin automatico do JetBrains Rider
+/[Aa]ssets/Plugins/Editor/JetBrains*
+*.DotSettings.user
+
+# Caches do Visual Studio e do Gradle
+.vs/
+.vscode/
+.gradle/
+
+# Arquivos de solucao gerados automaticamente (o Unity recria)
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Relatorios de crash
+sysinfo.txt
+mono_crash.*
+crashlytics-build.properties
+
+# Builds e pacotes exportados
+*.apk
+*.aab
+*.unitypackage
+*.unitypackage.meta
+*.app
+
+# Cenas temporarias do Test Runner
+InitTestScene*.unity*
+/[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# Addressables (nao afeta o fases.json)
+/ServerData
+/[Aa]ssets/StreamingAssets/aa*
+/[Aa]ssets/AddressableAssetsData/link.xml*
+/[Aa]ssets/Addressables_Temp*
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+
+# Visual Scripting (arquivos gerados)
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.bytes
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.bytes.meta
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
+
+# ---- Unity Version Control (os dois ficam na mesma pasta) ----
+.plastic/
+
+# ---- Windows ----
+Thumbs.db
+Desktop.ini
